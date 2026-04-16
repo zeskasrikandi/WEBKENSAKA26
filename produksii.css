@@ -1,0 +1,188 @@
+body {
+    background-image: url("backg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: url("mario.png"), auto;
+}
+
+.headers {
+    width: 1250px;
+}
+
+div.Header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.headerimg {
+    position: absolute;
+    bottom: -10px;
+    transform: none;
+    animation: kekanan 6s linear infinite;
+    z-index: 2;
+    width: 60px;
+    height: auto;
+}
+
+@keyframes kekanan {
+    from { right: 100%; }
+    to { right: -10%; }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4c2611;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+li { float: left; }
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown { display: inline-block; }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #89572d;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content { display: block; }
+
+@font-face {
+    font-family: font;
+    src: url(Nexa-Heavy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: kris;
+    src: url(Kirsty\ Bd.otf) format('truetype');
+}
+
+p {
+    font-family: font;
+    color: white;
+    text-align: justify;
+}
+
+h2 {
+    font-family: kris;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+h2:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 8px white;
+}
+
+.boom {
+    background-color: #752a0b;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-top: 20px;
+}
+
+.ter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 40px;
+}
+
+.poster, .foto, .fotodua, .posterone, .fototwo, .fotothree {
+    width: 250px;
+    height: 320px;
+    border: 2px solid #f2d275;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.poster:hover { content: url("bio.png"); transform: scale(1.1); }
+.foto:hover { content: url("secret.png"); transform: scale(1.1); }
+.fotodua:hover { content: url("batik.png"); transform: scale(1.1); }
+.posterone:hover { content: url("pik.png"); transform: scale(1.1); }
+.fototwo:hover { content: url("logo.png"); transform: scale(1.1); }
+.fotothree:hover { content: url("cookie.png"); transform: scale(1.1); }
+
+.katalog {
+    background-color: #761305;
+    border: 2px solid #f2d275;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.produk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.isii {
+    background-color: #761305;
+    border: 2px solid #f2d275;
+    border-radius: 15px;
+    padding: 15px;
+    width: 70%;
+}
+
+.isii img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 40px auto;
+    max-width: 700px;
+}
+
+.video-wrap video {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #f2d275;
+}
+
+.instagram {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    transition: 0.3s ease;
+}

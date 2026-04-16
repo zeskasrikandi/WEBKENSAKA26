@@ -1,0 +1,150 @@
+body {
+    background-image: url("backg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: url("mario.png"), auto;
+}
+
+.headers{
+ width: 1250px;
+}
+
+div.Header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.headerimg {
+  position: absolute;
+  bottom: -10px; 
+  transform: none;
+  animation: kekanan 6s linear infinite;
+  z-index: 2;
+  width: 60px;
+  height: auto;
+}
+
+@keyframes kekanan {
+  from { right: 100%; }
+  to   { right: -10%; }
+}
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4c2611;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+li{
+    float:left
+}
+li a,.dropbtn{
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #89572d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba (0,0,0,0.2);
+    z-index:1;
+}
+.dropdown-content a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content{
+display: block;
+}
+
+.pelak{
+    background-color: #752a0b;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-top: 20px;
+}
+
+@font-face{
+    font-family: font;
+    src: url(Nexa-Heavy.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: kris;
+    src: url(Kirsty\ Bd.otf) format('truetype');
+}
+
+p{
+    font-family: font;
+    color: white;
+    text-align: justify;
+}
+
+h2{
+    font-family: kris;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sanaan{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    border: 1 px solid;
+}
+.belak{
+    width: 400px;
+    height: auto;
+    background-color: #fadc9a;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.isi{
+    flex: 1;
+    background-color: #761305;
+    border: 2px solid #f2d275;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 150px;
+}
+
+h2{
+    transition: 0.3s ease;
+}
+
+h2:hover{
+    transform: scale(1.05);
+    text-shadow: 0 0 8px white;
+    size: 30px;
+}
+
+.instagram {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    transition: 0.3s ease;
+}

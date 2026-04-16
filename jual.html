@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🌟Website IL Kensaka🌟</title>
+    <link rel="stylesheet" href="jual.css">
+</head>
+<body>
+<div class="Header">
+    <img src="banban.png" class="headers">
+    <img src="gatotkaca.png" class="headerimg">
+</div>
+<ul class="Navigator">
+    <li><a href='Index.html'><img src="strak.png" height="65px" width="125px"></a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><img src="dahulu.png" height="65px" width="125px"></a>
+        <div class="dropdown-content">
+            <a href='latarbelakang.html'><img src="latbel.png" height="65px" width="125px"></a>
+            <a href='tujuan.html'><img src="tuj.png" height="65px" width="125px"></a>
+            <a href='manfaat.html'><img src="faat.png" height="65px" width="125px"></a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><img src="rencana.png" height="65px" width="125px"></a>
+        <div class="dropdown-content">
+            <a href='produksii.html'><img src="produksi.png" height="65px" width="125px"></a>
+            <a href='promosi.html'><img src="promosi.png" height="65px" width="125px"></a>
+            <a href='booth.html'><img src="boooooth.png" height="65px" width="125px"></a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><img src="giatan.png" height="65px" width="125px"></a>
+        <div class="dropdown-content">
+            <a href='pelaksanaan.html'><img src="pelak.png" height="65px" width="125px"></a>
+            <a href='keuangan.html'><img src="keuangan.png" height="65px" width="125px"></a>
+            <a href='jual.html'><img src="jualan.png" height="65px" width="125px"></a>
+            <a href='refleksi.html'><img src="fleksi.png" height="65px" width="125px"></a>
+            <a href='ipa.html'><img src="biotech.png" height="65px" width="125px"></a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><img src="tup.png" height="65px" width="125px"></a>
+        <div class="dropdown-content">
+            <a href='simpulan.html'><img src="sim.png" height="65px" width="125px"></a>
+            <a href='saran.html'><img src="sar.png" height="65px" width="125px"></a>
+        </div>
+    </li>
+    <li><a href='pustaka.html'><img src="taka.png" height="65px" width="125px"></a></li>
+    <li><a href='lampiran.html'><img src="ran.png" height="65px" width="125px"></a></li>
+    <li><a href='ppt.html'><img src="ppt.png" height="65px" width="125px"></a></li>
+</ul>
+<h2 class="fav">💡 Laporan Statistik 💡</h2>
+<div class="laporan">
+    <h2 class="title">Laporan Pembelian</h2>
+    <hr class="line">
+    <div class="cards">
+        <div class="card">
+            <p class="label">TOTAL PEMBELIAN</p>
+            <p class="number">Rp3.558.018</p>
+            <p class="sub">Tanpa biaya booth</p>
+        </div>
+        <div class="card">
+            <p class="label">BIAYA BOOTH</p>
+            <p class="number">Rp447.347</p>
+            <p class="sub">Dekorasi & operasional</p>
+        </div>
+        <div class="card">
+            <p class="label">TOTAL MODAL KELUAR</p>
+            <p class="number">Rp4.005.365</p>
+            <p class="sub">Keseluruhan pengeluaran</p>
+        </div>
+    </div>
+
+<div class="toggle-row">
+    <button class="toggle-btn active" onclick="sw('pem','tbl',this)">Tabel</button>
+    <button class="toggle-btn" onclick="sw('pem','bar',this)">Diagram Batang</button>
+    <button class="toggle-btn" onclick="sw('pem','hbar',this)">Batang Horizontal</button>
+    <button class="toggle-btn" onclick="sw('pem','lingkaran',this)">Diagram Lingkaran</button>
+</div>
+<div id="pem-tbl" class="chart-panel active">
+    <div class="tbl-wrap">
+        <img src="tabel.png" alt="tabel" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="pem-bar" class="chart-panel">
+    <div class="chart-wrap">
+        <img src="pembelian_bar.png" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="pem-hbar" class="chart-panel">
+    <div class="chart-wrap">
+        <img src="pembelian_hbar.png" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="pem-lingkaran" class="chart-panel">
+    <div class="chart-wrap" style="max-width:450px; margin:auto;">
+        <img src="pembelianlingkaran.jpeg" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+</div>
+<div class="laporan">
+    <h2 class="title">Laporan Modal Awal</h2>
+    <hr class="line">
+    <div class="toggle-row">
+        <button class="toggle-btn active" onclick="sw('mod','tbl',this)">Tabel</button>
+        <button class="toggle-btn" onclick="sw('mod','bar',this)">Diagram Batang</button>
+        <button class="toggle-btn" onclick="sw('mod','hbar',this)">Batang Horizontal</button>
+        <button class="toggle-btn" onclick="sw('mod','lingkaran',this)">Diagram Lingkaran</button>
+    </div>
+    <div id="mod-tbl" class="chart-panel active">
+        <div class="tbl-wrap" style="max-width: 800px; display: flex; margin: auto;">
+            <img src="12_tabel_modal_awal.png" alt="tabel" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="mod-bar" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="modal_bar.png" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="mod-hbar" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="modal_hbar.png" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="mod-lingkaran" class="chart-panel">
+        <div class="chart-wrap" style="max-width:450px; margin:auto;">
+            <img src="modal awal lingkaran.jpeg" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+</div>
+<div class="laporan">
+    <h2 class="title">Laporan Penjualan</h2>
+    <hr class="line">
+    <div class="cards">
+        <div class="card">
+            <p class="label">TOTAL PENJUALAN</p>
+            <p class="number">Rp7.067.000</p>
+            <p class="sub">Online + Offline</p>
+        </div>
+        <div class="card">
+            <p class="label">Penjualan Online (PO)</p>
+            <p class="number">Rp2.956.000</p>
+            <p class="sub">Pre-order (41,82%)</p>
+        </div>
+        <div class="card">
+            <p class="label">Penjualan Offline (OTS)</p>
+            <p class="number">Rp4.111.000</p>
+            <p class="sub">5 Feb 2026 (58,18%)</p>
+        </div>
+    </div>
+<div class="toggle-row">
+    <button class="toggle-btn active" onclick="sw('pen','tbl',this)">Tabel</button>
+    <button class="toggle-btn" onclick="sw('pen','bar',this)">Diagram Batang</button>
+    <button class="toggle-btn" onclick="sw('pen','hbar',this)">Batang Horizontal</button>
+    <button class="toggle-btn" onclick="sw('pen','lingkaran',this)">Diagram Lingkaran</button>
+        <button class="toggle-btn" onclick="sw('pen','presentase',this)">Perhitungan Derajat & Presentase</button>
+    <button class="toggle-btn" onclick="sw('pen','vs',this)">PO vs OTS</button>
+</div>
+<div id="pen-tbl" class="chart-panel active">
+    <div class="tbl-wrap" style="max-width:900px; display:block; margin: auto;">
+        <img src="penj.png" alt="tabel" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="pen-bar" class="chart-panel">
+    <div class="chart-wrap">
+        <img src="penjualan_bar.png" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="pen-hbar" class="chart-panel">
+    <div class="chart-wrap">
+        <img src="penjualan_hbar.png" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="pen-lingkaran" class="chart-panel">
+    <div class="chart-wrap" style="max-width:450px; margin:auto;">
+        <img src="penjualan per produk lingkaran.jpeg" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="pen-presentase" class="chart-panel">
+    <div class="chart-wrap" style="max-width: 600px; margin: auto;">
+        <img src="presentase.jpeg" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="pen-vs" class="chart-panel">
+    <div class="chart-wrap">
+        <img src="penjualan_po_ots.png" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+</div>
+<div class="laporan">
+    <h2 class="title">Jenis Pembayaran</h2>
+    <hr class="line">
+    <div class="toggle-row">
+        <button class="toggle-btn active" onclick="sw('pemba','tbl',this)">Tabel</button>
+        <button class="toggle-btn" onclick="sw('pemba','bar',this)">Diagram Batang</button>
+        <button class="toggle-btn" onclick="sw('pemba','hbar',this)">Batang Horizontal</button>
+        <button class="toggle-btn" onclick="sw('pemba','lingkaran',this)">Diagram Lingkaran</button>
+        <button class="toggle-btn" onclick="sw('pemba','garis',this)">Diagram Garis</button>
+    </div>
+    <div id="pemba-tbl" class="chart-panel active">
+        <div class="tbl-wrap" style="max-width: 800px; margin: auto;">
+            <img src="03_tabel_jenis_pembayaran.png" alt="tabel" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="pemba-bar" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="pembayaran_bar.png" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="pemba-hbar" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="pembayaran_hbar.png" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="pemba-lingkaran" class="chart-panel">
+        <div class="chart-wrap" style="max-width:450px; margin:auto;">
+            <img src="pembayaranlingkaran.jpeg" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+        <div id="pemba-garis" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="05_diagram_garis_pembayaran.png" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+</div>
+<div class="laporan">
+    <h2 class="title">Persentase Alokasi Gaji</h2>
+    <hr class="line">
+    <div class="toggle-row">
+        <button class="toggle-btn active" onclick="sw('per','tbl',this)">Tabel</button>
+        <button class="toggle-btn" onclick="sw('per','bar',this)">Diagram Batang</button>
+        <button class="toggle-btn" onclick="sw('per','hbar',this)">Batang Horizontal</button>
+        <button class="toggle-btn" onclick="sw('per','gar',this)">Batang Garis</button>
+        <button class="toggle-btn" onclick="sw('per','lingkaran',this)">Diagram Lingkaran</button>
+    </div>
+    <div id="per-tbl" class="chart-panel active">
+        <div class="tbl-wrap" style="max-width:800px; display:block; margin: auto;">
+            <img src="09_tabel_alokasi_gaji.png" alt="tabel" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="per-bar" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="gaji_bar.png" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="per-hbar" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="gaji_hbar.png" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+        <div id="per-gar" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="11_diagram_garis_gaji.png" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="per-lingkaran" class="chart-panel">
+        <div class="chart-wrap" style="max-width:450px; margin:auto;">
+            <img src="alokasi gaji.jpeg" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+</div>
+<div class="laporan">
+    <h2 class="title">Laporan Rugi/Laba</h2>
+    <hr class="line">
+    <div class="toggle-row">
+        <button class="toggle-btn active" onclick="sw('rl','tbl',this)">Tabel</button>
+        <button class="toggle-btn" onclick="sw('rl','bar',this)">Diagram Garis</button>    </div>
+    <div id="rl-tbl" class="chart-panel active">
+        <div class="tbl-wrap" style="max-width:800px; display:block; margin: auto;">
+            <img src="01_tabel_laporan_RL.png" alt="tabel" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="rl-bar" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="02_diagram_garis_RL.png" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    </div>
+<div class="laporan">
+    <h2 class="title">Pembagian Keuntungan & Pengembalian Modal</h2>
+    <hr class="line">
+    <div class="toggle-row">
+        <button class="toggle-btn active" onclick="sw('keun','tbl',this)">Tabel</button>
+        <button class="toggle-btn" onclick="sw('keun','bar',this)">Diagram Batang</button>
+        <button class="toggle-btn" onclick="sw('keun','hbar',this)">Diagram Garis Modal Awal vs Gaji per Anggota</button>
+        <button class="toggle-btn" onclick="sw('keun','lingkaran',this)">Diagram Lingkaran</button>
+    </div>
+    <div id="keun-tbl" class="chart-panel active">
+        <div class="tbl-wrap">
+            <img src="keunt.png" alt="tabel" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="keun-bar" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="keuntungan_bar.png" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="keun-hbar" class="chart-panel">
+        <div class="chart-wrap">
+            <img src="vsss.jpeg" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+    <div id="keun-lingkaran" class="chart-panel">
+        <div class="chart-wrap" style="max-width:450px; margin:auto;">
+            <img src="modal+gaji.jpeg" style="width:100%; border-radius:10px;">
+        </div>
+    </div>
+</div>
+<div class="laporan">
+    <h2 class="title">Statistik Produk — Mean, Median, Modus</h2>
+    <hr class="line">
+    <div class="cards">
+        <div class="card">
+            <p class="label">Mean (Rata-rata)</p>
+            <p class="number">≈ 20,27</p>
+            <p class="sub">304 ÷ 15 produk</p>
+        </div>
+        <div class="card">
+            <p class="label">Median (Nilai Tengah)</p>
+            <p class="number">20</p>
+            <p class="sub">Data ke-8 dari 15</p>
+        </div>
+        <div class="card">
+            <p class="label">Modus (Paling Sering)</p>
+            <p class="number">11</p>
+            <p class="sub">KK BBQ, KK Keju, KK Balado</p>
+        </div>
+    </div>
+        <h2 class="title">Peringkat Produk (Terlaris → Terendah)</h2>
+        <hr class="line">
+<img src="hitung.jpeg" alt="perhitungan" style="width:100%; border-radius:10px; max-width:800px; display:block; margin:auto;">
+<div class="toggle-row">
+    <button class="toggle-btn active" onclick="sw('stas','tbl',this)">Tabel Peringkat</button>
+    <button class="toggle-btn" onclick="sw('stas','bar',this)">Diagram Batang</button>
+    <button class="toggle-btn" onclick="sw('stas','gar',this)">Diagram Garis</button>
+    <button class="toggle-btn" onclick="sw('stas','jum',this)">Jumlah PO</button>
+    <button class="toggle-btn" onclick="sw('stas','mmm',this)">Grafik Distribusi MMM</button>
+</div>
+<div id="stas-tbl" class="chart-panel active">
+    <div class="tbl-wrap" style="max-width:800px; margin:auto;">
+        <img src="prudk.png" alt="tabel" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="stas-bar" class="chart-panel">
+    <div class="chart-wrap">
+        <img src="statistik_ranking.png" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="stas-gar" class="chart-panel">
+    <div class="chart-wrap">
+        <img src="08_diagram_garis_PO.png" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="stas-jum" class="chart-panel">
+    <div class="chart-wrap" style="max-width:800px; margin:auto;">
+        <img src="06_tabel_jumlah_PO.png" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+<div id="stas-mmm" class="chart-panel">
+    <div class="chart-wrap">
+        <img src="statistik_mmm.png" style="width:100%; border-radius:10px;">
+    </div>
+</div>
+</div>
+<script>
+function sw(group, id, btn) {
+    document.querySelectorAll('[id^="' + group + '-"]').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(group + '-' + id).classList.add('active');
+    btn.classList.add('active');
+}
+</script>
+<h2 class="fav"> Kesimpulan </h2>
+<div class="kesimpulan">
+    <p>Kesimpulannya, kelompok kami mengeluarkan modal sebesar Rp3,558,018 untuk pembelian produk, alat, bahan, dan biaya booth dalam proses persiapan bazaar. Dengan modal tersebut, kami mendapatkan total pendapatan penjualan sebesar Rp7.067.000, yaitu Rp2.956.000 dari penjualan online dan Rp4.111.000 dari penjualan offline. Setelah dikurangi Harga Pokok Penjualan sebesar Rp3.558.018, kelompok kami memperoleh laba kotor sebesar Rp3.508.982.</p>
+    <p>Selain laba kotor, kami juga mendapatkan biaya pendapatan lain-lain sebesar Rp 615.000 dari kembalian dan tips. Selain itu, kami juga membayar biaya operasional yaitu biaya booth sebesar Rp447.347, gaji anggota kelompok sebesar Rp3.576.635, dan donasi atau sumbangan sebesar Rp100.000, sehingga total pengeluaran operasional setelah laba kotor kami mencapai Rp4.123.982. Dikurangi dengan laba kotor dan pendapatan lain-lain, laba/rugi bersih kelompok kami adalah Rp0, yaitu impas atau break even, yaitu tidak ada keuntungan dan juga tidka ada kerugian sama sekali.</p>
+</div>
+    <a class="insta" href="https://www.instagram.com/kencanasambarkaca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+        <img class="instagram" src="ins.png">
+    </a>
+</body>
+</html>

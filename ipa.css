@@ -1,0 +1,156 @@
+body {
+    background-image: url("backg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor: url("mario.png"), auto;
+    margin: 0;
+}
+
+.Header {
+    text-align: center;
+    position: relative;
+}
+
+.headers {
+    width: 100%;
+    max-width: 1250px;
+}
+
+.headerimg {
+    position: absolute;
+    bottom: -10px;
+    right: 100%;
+    width: 60px;
+    animation: kekanan 6s linear infinite;
+}
+
+@keyframes kekanan {
+    from { right: 100%; }
+    to { right: -10%; }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4c2611;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    position: relative;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    padding: 14px 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #89572d;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bio {
+    background-color: #780000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@font-face {
+    font-family: font;
+    src: url(Nexa-Heavy.ttf);
+}
+
+@font-face {
+    font-family: kris;
+    src: url(Kirsty\ Bd.otf);
+}
+
+p {
+    font-family: font;
+    color: white;
+}
+
+h2 {
+    font-family: kris;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+h2:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 8px white;
+}
+
+.bread {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.videowrap, .videowrapone {
+    width: 100%;
+    max-width: 560px;
+}
+
+.videowrap iframe, .videowrapone iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border-radius: 10px;
+    border: 3px solid #f2d275;
+    background-color: #e5a657;
+}
+
+.vid, .coco {
+    flex: 1 1 300px;
+    background-color: #761305;
+    border: 2px solid #f2d275;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.images,.imagestwo,.imagesthree {
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+    padding-bottom: 60px;
+}
+
+mark {
+    color: #ecbb73;
+    background: none;
+}
+
+.instagram {
+    display: block;
+    width: 300px;
+    margin: 40px auto;
+    transition: 0.3s ease;
+}
+
+.instagram:hover {
+    transform: scale(1.05);
+}
